@@ -17,7 +17,6 @@ public class CsvService {
         List<Weather> weatherData = new ArrayList<>();
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
             String[] nextLine;
-            // Skip header
             reader.readNext();
             while ((nextLine = reader.readNext()) != null) {
                 try {
@@ -31,7 +30,6 @@ public class CsvService {
                             .build();
                     weatherData.add(weather);
                 } catch (Exception e) {
-                    // Skip malformed rows
                 }
             }
         } catch (IOException | CsvValidationException e) {

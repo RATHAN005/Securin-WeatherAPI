@@ -24,9 +24,6 @@ public class DataLoader implements CommandLineRunner {
             String filePath = "D:\\Securin weather app\\weather-data\\Assessment 2\\testset.csv";
             log.info("Starting CSV data import from: {}", filePath);
             List<Weather> data = csvService.parseWeatherCsv(filePath);
-
-            // Chunking the save to avoid huge payloads if needed, though Atlas can handle a
-            // bit
             int batchSize = 1000;
             for (int i = 0; i < data.size(); i += batchSize) {
                 int end = Math.min(i + batchSize, data.size());
