@@ -107,5 +107,12 @@ weather-api/
 └── weather_api_postman_collection.json
 ```
 
+## OUTPUT
+
+<img width="1915" height="1049" alt="Screenshot 2026-02-25 141949" src="https://github.com/user-attachments/assets/1d9fe2eb-ba07-477d-afec-fb83d454c04a" />
+<img width="1915" height="1056" alt="Screenshot 2026-02-25 115819" src="https://github.com/user-attachments/assets/1cb775fc-e8b8-4bee-bca5-34f369504d2b" />
+
+
 ## 📝 License
 This project is developed for Securin assessment purposes.
+
